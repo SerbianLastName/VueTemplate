@@ -1,10 +1,8 @@
 FROM node:lts-alpine
-
-COPY package.json /frontend/
-WORKDIR /frontend/
+COPY package.json /data/
+WORKDIR /data/
 RUN yarn install
-ENV PATH /frontend/node_modules/.bin:$PATH
-
-COPY . /frontend/app/
-WORKDIR /frontend/app/
+ENV PATH /data/node_modules/.bin:$PATH
+COPY . /data/app/
+WORKDIR /data/app/
 CMD ["yarn", "run", "dev"]
