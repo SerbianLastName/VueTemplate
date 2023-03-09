@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0",
     "vue": "^3.2.45",
     "vue-router": "4",
     "wave-ui": "^2.46.0"

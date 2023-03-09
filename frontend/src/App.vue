@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import 'font-awesome/css/font-awesome.min.css'
 import TopBarVue from './components/TopBar.vue';
 import PopUpVue from './components/PopUp.vue';
 import { getUser } from './tools/jwtTools';
