@@ -7,6 +7,6 @@ import "wave-ui/dist/wave-ui.css";
 
 const app = createApp(App).use(router);
 
-new WaveUI(app, {});
+app.use(WaveUI, {});
 
 app.mount("#app");
